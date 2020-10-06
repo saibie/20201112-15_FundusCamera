@@ -1,0 +1,5 @@
+\def\noopsort#1{}\def\l{\char32l}\def\v#1{{\accent20 #1}}
+  \let\^^_=\v\def\hbk{hardback}\def\pbk{paperback}
+\begin{thebibliography}{}
+
+\end{thebibliography}
