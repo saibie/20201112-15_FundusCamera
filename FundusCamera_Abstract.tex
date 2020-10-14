@@ -1,149 +1,273 @@
-%% LyX 1.6.4 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[10pt,a4paper,english]{amsart}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-%\usepackage{endnotes}
-\usepackage{units}
-%\usepackage{multirow}
-\usepackage{amstext}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsfonts}
-\usepackage{enumerate}
-\usepackage{cite}
-%\usepackage{natbib}
-\usepackage{amsthm}
-\usepackage{array,arydshln}
-\usepackage[pdftex]{graphicx}
-\usepackage{rotating}
-\usepackage{ifpdf}
-%\usepackage{epsfig}
-\usepackage[all]{xy}
-\usepackage{latexsym}
-\usepackage[hidelinks]{hyperref}
-\usepackage{color}
-\usepackage{eucal}
-\usepackage{mathrsfs}
-\usepackage{kotex}
-\usepackage{slashbox}
-%\usepackage{ulem}
-%\usepackage{hfont}
-
-
-\makeatletter
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-\numberwithin{equation}{section} %% Comment out for sequentially-numbered
-\numberwithin{figure}{section} %% Comment out for sequentially-numbered
-\numberwithin{table}{section}
-\let\footnote=\endnote
-\theoremstyle{plain}
-\newtheorem{thm}{Theorem}[section]
-\newtheorem{theorem}[thm]{Theorem}
-\newtheorem{Theorem}[thm]{Theorem}
-\theoremstyle{definition}
-\newtheorem{defn}[thm]{Definition}
-\newtheorem{Def}[thm]{Definition}
-\newtheorem{definition}[thm]{Definition}
-\newtheorem{exam}[thm]{Example}
-\newtheorem{algo}[thm]{Algorithm}
-%  \theoremstyle{plain}
-\newtheorem{assumption}[thm]{Assumption}
-\theoremstyle{plain}
-\newtheorem{lem}[thm]{Lemma}
-\newtheorem{lemma}[thm]{Lemma}
-\theoremstyle{plain}
-\newtheorem{cor}[thm]{Corollary}
-\newtheorem{corollary}[thm]{Corollary}
-\theoremstyle{plain}
-\newtheorem{rmk}[thm]{Remark}
-\newtheorem{rem}[thm]{Remark}
-
-\def\norm#1{\|#1\|}
-
-\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
-
-%\newcommand{\norm}[1]{\|#1\|}
-\def\norm#1{\|#1\|}
-\def\normm#1#2{\|#1\|_{#2}}
-\def\normF#1{\|#1\|_{F}}
-\def\Proof{{\bf Proof.\enspace}}
-\def\vec{{\sf vec}}
-%\def\unvec{\mathrm{unvec}}
-\def\tr{\mathrm{tr}}
-%\def\tr{\textrm{tr}}
-\def\bmatrix#1{\left[\begin{matrix}#1\end{matrix}\right]}
-\def\pmatrix#1{\left(\begin{matrix}#1\end{matrix}\right)}
-\def\RR{\mathbb{R}}
-\def\NN{\mathbb{N}}
-\def\CC{\mathbb{C}}
-\def\nbyn{n\times n}
-\def\mbyn{m\times n}
-\def\mbym{m\times m}
-\def\pbyq{p\times q}
-\def\nnbynn{n^{2}\times n^{2}}
-\def\mbf#1{\mathbf{#1}}
-\def\mrm#1{\mathrm{#1}}
-\def\bpi{\boldsymbol{\pi}}
-\def\a{\alpha}
-\def\b{\beta}
-\def\d{\delta}
-\def\e{\varepsilon}
-\def\l{\lambda}
-\def\D{\mathfrak{D}}
-\def\F{\mathcal{F}}
-\def\G{\mathcal{G}}
-\def\Q{\mathcal{Q}}
-\def\M{\mathcal{M}}
-\def\N{\mathcal{N}}
-\def\P{\mathcal{P}}
-\def\X{\mathfrak{X}}
-\def\proj{\mathbf{P}}
-\def\pjn{\mathbf{P}_{\mathcal{N}}}
-\def\pjm{\mathbf{P}_{\mathcal{M}}}
-\def\tXi{\widetilde{X}_{i}}
-\def\tXii{\widetilde{X}_{i+1}}
-\def\dpm#1{\begin{displaymath}#1\end{displaymath}}
-\def\bdm{\begin{displaymath}}
-\def\edm{\end{displaymath}}
-\def\dtyl{\displaystyle}
-\def\ones#1{\mathbf{1}_{#1}}
-%\def\onesn{\mathbf{1}_{n \times n}}
-
-\definecolor{gray}{rgb}{.7,.7,.7}
-
-\makeatother
-
+\documentclass[12pt]{ksiamproc}
+\usepackage{times}
+\usepackage{float,graphicx}
+\usepackage{amssymb,latexsym,amsmath}
+\renewcommand\baselinestretch{1}
+%%%
+%%% pdf 파일 작성시에는 pdflatex, latex+dvips+ps2pdf, latex+dvipdfm, latex+dvipdfmx
+%%%  중에서 적절한 명령을 사용하시면 됩니다.
+%%%
+%%% You may use one of the following command to generate a pdf-file
+%%% pdflatex, latex+dvips+ps2pdf, latex+dvipdfm, latex+dvipdfmx
+%%%
+%%%%
+%% If you must include aknowledgement for support, insert
+%% the followng section just before the reference section
+%%
+%% \section*{Aknowledgement}\noindent%
+%% This work .....
+%%
+%%
 \begin{document}
+	\pagestyle{empty}
+	\begin{frontmatter}
+		%%
+		%%%  The title should be in 18-point bold face with uppercase
+		%%%%  제목의 모든 문자는 18-pt boldface 대문자를 사용하여야 합니다.
+		%%%%%
+		\title{AN ALGORITHM FOR OPHTHALMIC DISEASE DIAGNOSIS BASED ON CONVOLUTIONAL NEURAL NETWORK}
+		%%
+		%%
+		%% 저자를 리스트하는 형식(\author)에서  콤마와(,) and에 주의하시기 바랍니다.
+		%% Be aware of comma(,) and \and in the \author command
+		%%
+		%%
+		\author[bcmm]{Sang-hyup SEO}
+		\author[nims]{, Youngho WOO}
+		\author[bcmm]{\and Hyojung LEE}
+		%%
+		%%
+		%아래 \address와 위의 \author 사이에 blank line이 있어야 합니다.
+		%%%% There should be a blank line between \author and \address
+		%%
+		
+		\medskip
+		%%%%
+		\address[bcmm]{Busan Center for Medical Mathematics, National Institute for Mathematical Science, Busan 49241, Republic of Korea}
+		\address[nims]{National Institute for Mathematical Science, Daejeon 34047, Republic of Korea}
+		%
+		% 이 바로 아래는 blank line이 있어야 합니다. there should come a blank line after this line
+		
+		\medskip
+		\centering{Corresponding Author$\;:\;$Sang-hyup SEO,
+			saibie1677@nims.re.kr}
+		%
+		\begin{abstract}
+			
+		\end{abstract}
+	\end{frontmatter}
+	%%
+	%%
+	%% \section과 \subsubsection에 *가 있어야 합니다.
+	%% section과 subsubsection에 numbering을 하지 않습니다.
+	%% \section 다음에 \subsection이 아니라 \subsubsection임에 주의 하시기 바랍니다.
+	%% 반드시 section 다음에 \noindent를 명령해야 합니다.
+	%% \subsubsection에서 각 단어의 첫 글자는 대문자이어야 합니다.
+	%%
+	%% \section and \subsubsection must have the asterisk(*) symbol as shown below.
+	%%  \section must have \noindent command at the end of the command
+	%%   as shown below
+	%%
 	
-\title{Introducing of Fundus Cameras based on Convolutional Neural Network}
-\author{Sang-hyup Seo}
-\address{Sang-hyup Seo\\Busan Center for MM, National Institute for Mathematical Science, 49241, Gudeok-ro 187, Busan, Republic of Korea}
-\email{saibie1677@nims.re.kr}
-\date{\today}
-
-\begin{abstract}
-%	We consider the Newton iteration for a matrix polynomial equation which arises in stochastic problem.
-%	In this paper, we show that the elementwise minimal nonnegative solution of the matrix polynomial equation can be obtained using Newton's method if the equation satisfies the sufficient condition, and
-%	the convergence rate of the iteration is quadratic if the solution is simple.
-%	Moreover, we show that the convergence rate is at least linear if the solution is non-simple,
-%	but we can apply a modified Newton method whose iteration number is less than the pure Newton iteration number.
-%	Finally, we give a numerical experiment which is related with our issue.
-\end{abstract}
-
-%\keywords{matrix polynomial equation, positive solution, nonnegative solution, $M$-matrix, Newton's method, line search, acceleration of a method, nearly non-simple}
-
-%\subjclass[2010]{65H10}
-
-% \thanks{$\dagger$Corresponding Author}
-
-\maketitle
-
-\section{Introduction}\label{sec:intro}
-
-
-
-\bibliographystyle{plain}
-\bibliography{SHSeo}
-
+	\section*{Primary heading}\noindent%
+	
+	%
+	%%
+	%% Each word in \subsubsection must start with the capital letter
+	%%
+	%
+	
+	%
+	%
+	\section*{EQUATIONS, TABLES AND FIGURES}\noindent%
+	All forms of equations have to be centered and numbered
+	consecutively with Arabic numerals as they appear in the text of
+	the paper. The equation would be presented as follows:
+	\begin{equation}\label{eq:1}
+		\mathbf{Ma}+\mathbf{C(x)v}+\mathbf{K(x)u}=\mathbf{P}(t)
+	\end{equation}
+	Tables and figures must be integrated with the text and numbered
+	consecutively with Arabic numerals in the order in which reference
+	is made to them in the text of the paper.  The table or figure
+	caption would be referred to in the text as Table 1 or~ Fig. 1,
+	respectively, and be presented as follows.
+	
+	\begin{table}[ht]
+		\caption{The first table in the paper}
+		\begin{tabular}{|ccc|}\hline
+			%A&B&C\\ \hline
+			%0.1&0.2&1\\ \hline
+			&&\\
+			\phantom{MMMMMMMMMMMMMMMM}& Table or~ Figure&\phantom{MMMMMMMMMMMMMMMM}\\
+			&&\\ \hline
+		\end{tabular}
+	\end{table}
+	
+	\begin{figure}[ht]
+		%\centerline{\psfig{file=fig1.eps,width=6.5cm}}
+		%\includegraphics[width=4.7cm,angle=270]{ellipsoid.ps}
+		\caption{\label{fig:fig1} The first figure in the paper}
+	\end{figure}
+	%%
+	%% If you want to include acknowledgement uncomment the following
+	%% and supply appropriate paragraph
+	%%\section*{Acknowledgement}\noindent%
+	%% This work .....
+	%%%
+	\section*{References}\noindent%
+	%%
+	%% 참고문헌은 아래 마지막 부분의 \thebibliography environment를 이용합니다.
+	%% 이 섹션은 단지 설명을 위한 것 입니다.
+	%%
+	%% This section is just for instruction how to prepare reference setion.
+	%% Use \thebibliography environment for reference as shown below after this section
+	%%
+	%%
+	References are to be listed at the end of the paper in the order
+	of the reference, and are referred to in the paper by the numbers
+	in brackets such as \cite{hugh,KLH}.  Style the reference list
+	according to the following examples.
+	\\
+	
+	\noindent (1) Book
+	
+	\noindent1.  Hughes, T. J. R., {\it The Finite Element Method,
+		Linear Static and Dynamic Finite Element  Analysis},
+	Prentice-Hall, Engelwood Cliffs, NJ, 1987.
+	
+	\bigskip
+	
+	\noindent (2) Paper in a journal
+	
+	\noindent2.  Koh, H. M., Lee, H. S. and Haber, R. B., ``Dynamic
+	crack propagation analysis using Eulerian-Lagrangian kinematic
+	descriptions'', {\it Computational Mechanics}, Vol. 3, 1988, pp.
+	141-155.
+	
+	\bigskip
+	\noindent (3) Chapter in a book
+	
+	\noindent3.  Riedel, H., ``Nucleation of Creep Cavities/Basic
+	Theories", Chapter 7, {\it Fracture at High Temperatures},
+	Springer-Verlag, Berlin, 1987.
+	
+	\bigskip
+	\noindent (4) Paper in Conference Proceedings
+	
+	\noindent4.  Lee, H.S. and Koh, H.M., ``A Moving-Grid Finite
+	Element Method for the Prediction of Dynamic Crack Propagation in
+	Brittle Materials", {\it Proc. of the Second International
+		Conference on Computer Aided Assessment and Control of Localized
+		Damage}, Vol. 2, pp 463-480, Southampton U.K., July 1992.
+	
+	%%
+	%%
+	%% 참고 문헌  문헌의 형식에 주의하시어 작성시 아래를 이용하시기 바랍니다.
+	%% Use the follwoing format for Reference section
+	%%
+	\begin{thebibliography}{11}
+		%Book
+		\bibitem {hugh}{Hughes, T. J. R.},
+		\newblock{\em The Finite Element Method, Linear Static and Dynamic Finite
+			Element  Analysis}, Prentice-Hall, Engelwood Cliffs, NJ, 1987.
+		%
+		%Paper in a journal
+		\bibitem {KLH}{ Koh, H. M., Lee, H. S. and Haber, R. B.},
+		{``Dynamic crack propagation analysis using Eulerian-Lagrangian
+			kinematic descriptions''}, {\em Computational Mechanics}, Vol. 3,
+		1988, pp. 141-155.
+		%
+		%Chapter in a book
+		\bibitem {riedel}{Riedel, H.},
+		{``Nucleation of Creep Cavities/Basic Theories"},  Chapter 7, {\it
+			Fracture at High Temperatures}, Springer-Verlag, Berlin, 1987.
+		%
+		%Paper in Conference Proceedings
+		\bibitem {LK}{Lee, H.S. and Koh, H.M.},
+		{``A Moving-Grid Finite Element Method for the Prediction of
+			Dynamic Crack Propagation in Brittle Materials"}, {\it Proc. of
+			the Second International Conference on Computer Aided Assessment
+			and Control of Localized Damage}, Vol. 2, pp 463-480, Southampton
+		U.K., July 1992.
+	\end{thebibliography}
 \end{document}
+
+
+%\documentclass[10pt,a4paper,english]{amsart}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%%\usepackage{endnotes}
+%\usepackage{units}
+%%\usepackage{multirow}
+%\usepackage{amstext}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{amsfonts}
+%\usepackage{enumerate}
+%\usepackage{cite}
+%%\usepackage{natbib}
+%\usepackage{amsthm}
+%\usepackage{array,arydshln}
+%\usepackage[pdftex]{graphicx}
+%\usepackage{rotating}
+%\usepackage{ifpdf}
+%%\usepackage{epsfig}
+%\usepackage[all]{xy}
+%\usepackage{latexsym}
+%\usepackage[hidelinks]{hyperref}
+%\usepackage{color}
+%\usepackage{eucal}
+%\usepackage{mathrsfs}
+%\usepackage{kotex}
+%\usepackage{slashbox}
+%%\usepackage{ulem}
+%%\usepackage{hfont}
+%
+%%\newcommand{\norm}[1]{\|#1\|}
+%\def\norm#1{\|#1\|}
+%\def\normm#1#2{\|#1\|_{#2}}
+%\def\normF#1{\|#1\|_{F}}
+%\def\Proof{{\bf Proof.\enspace}}
+%\def\vec{{\sf vec}}
+%%\def\unvec{\mathrm{unvec}}
+%\def\tr{\mathrm{tr}}
+%%\def\tr{\textrm{tr}}
+%\def\bmatrix#1{\left[\begin{matrix}#1\end{matrix}\right]}
+%\def\pmatrix#1{\left(\begin{matrix}#1\end{matrix}\right)}
+%\def\RR{\mathbb{R}}
+%\def\NN{\mathbb{N}}
+%\def\CC{\mathbb{C}}
+%\def\nbyn{n\times n}
+%\def\mbyn{m\times n}
+%\def\mbym{m\times m}
+%\def\pbyq{p\times q}
+%\def\nnbynn{n^{2}\times n^{2}}
+%\def\mbf#1{\mathbf{#1}}
+%\def\mrm#1{\mathrm{#1}}
+%\def\bpi{\boldsymbol{\pi}}
+%\def\a{\alpha}
+%\def\b{\beta}
+%\def\d{\delta}
+%\def\e{\varepsilon}
+%\def\l{\lambda}
+%\def\D{\mathfrak{D}}
+%\def\F{\mathcal{F}}
+%\def\G{\mathcal{G}}
+%\def\Q{\mathcal{Q}}
+%\def\M{\mathcal{M}}
+%\def\N{\mathcal{N}}
+%\def\P{\mathcal{P}}
+%\def\X{\mathfrak{X}}
+%\def\proj{\mathbf{P}}
+%\def\pjn{\mathbf{P}_{\mathcal{N}}}
+%\def\pjm{\mathbf{P}_{\mathcal{M}}}
+%\def\tXi{\widetilde{X}_{i}}
+%\def\tXii{\widetilde{X}_{i+1}}
+%\def\dpm#1{\begin{displaymath}#1\end{displaymath}}
+%\def\bdm{\begin{displaymath}}
+%\def\edm{\end{displaymath}}
+%\def\dtyl{\displaystyle}
+%\def\ones#1{\mathbf{1}_{#1}}
+%%\def\onesn{\mathbf{1}_{n \times n}}
+%
+%\definecolor{gray}{rgb}{.7,.7,.7}

@@ -1,0 +1,167 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.9)  14 OCT 2020 17:32
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**abstract_hangul.tex
+(./abstract_hangul.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06> (./ksiamproc_h.cls
+(c:/usr/texlive/2020/texmf-dist/tex/latex/cjk-ko/kotex.sty
+Package: kotex 2015/04/19 v1.6 Korean TeX (ko.TeX)
+
+(c:/usr/texlive/2020/texmf-dist/tex/latex/kotex-utf/kotex.cfg)
+(c:/usr/texlive/2020/texmf-dist/tex/latex/kotex-utf/kotexutf.sty
+Package: kotexutf 2015/07/18 v2.1.1 typesetting UTF-8 Korean documents
+
+(c:/usr/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(c:/usr/texlive/2020/texmf-dist/tex/plain/kotex-plain/kotexutf-core.tex
+\unih@ngulpoint=\count167
+\dhucs@emph@raise=\dimen134
+)
+Now handling font encoding LUC ...
+... processing UTF-8 mapping file for font encoding LUC
+
+(c:/usr/texlive/2020/texmf-dist/tex/latex/kotex-utf/lucenc.dfu
+File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+3001 (decimal 12289)
+   defining Unicode char U+3002 (decimal 12290)
+   defining Unicode char U+3008 (decimal 12296)
+   defining Unicode char U+3009 (decimal 12297)
+   defining Unicode char U+300A (decimal 12298)
+   defining Unicode char U+300B (decimal 12299)
+   defining Unicode char U+300C (decimal 12300)
+   defining Unicode char U+300D (decimal 12301)
+   defining Unicode char U+300E (decimal 12302)
+   defining Unicode char U+300F (decimal 12303)
+   defining Unicode char U+3010 (decimal 12304)
+   defining Unicode char U+3011 (decimal 12305)
+   defining Unicode char U+3014 (decimal 12308)
+   defining Unicode char U+3015 (decimal 12309)
+   defining Unicode char U+3016 (decimal 12310)
+   defining Unicode char U+3017 (decimal 12311)
+   defining Unicode char U+3018 (decimal 12312)
+   defining Unicode char U+3019 (decimal 12313)
+   defining Unicode char U+301A (decimal 12314)
+   defining Unicode char U+301B (decimal 12315)
+   defining Unicode char U+FF01 (decimal 65281)
+   defining Unicode char U+FF08 (decimal 65288)
+   defining Unicode char U+FF09 (decimal 65289)
+   defining Unicode char U+FF0C (decimal 65292)
+   defining Unicode char U+FF0E (decimal 65294)
+   defining Unicode char U+FF1A (decimal 65306)
+   defining Unicode char U+FF1B (decimal 65307)
+   defining Unicode char U+FF1C (decimal 65308)
+   defining Unicode char U+FF1D (decimal 65309)
+   defining Unicode char U+FF1E (decimal 65310)
+   defining Unicode char U+FF1F (decimal 65311)
+   defining Unicode char U+FF3B (decimal 65339)
+   defining Unicode char U+FF3D (decimal 65341)
+   defining Unicode char U+FF5B (decimal 65371)
+   defining Unicode char U+FF5D (decimal 65373)
+   defining Unicode char U+FF61 (decimal 65377)
+   defining Unicode char U+FF62 (decimal 65378)
+   defining Unicode char U+FF63 (decimal 65379)
+   defining Unicode char U+FF64 (decimal 65380)
+   defining Unicode char U+FF65 (decimal 65381)
+)
+\@josa=\count168
+\josatoks=\toks17
+
+(c:/usr/texlive/2020/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
+Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
+)))
+\@frontmatterwidth=\dimen135
+\@bls=\dimen136
+\eqnarraycolsep=\dimen137
+\labelwidthi=\dimen138
+\labelwidthii=\dimen139
+\labelwidthiii=\dimen140
+\labelwidthiv=\dimen141
+\@maxlistdepth=\count169
+\eqnbaselineskip=\skip47
+\eqnlineskip=\skip48
+\mathindent=\dimen142
+\rulepreskip=\dimen143
+\rulepostskip=\dimen144
+\c@section=\count170
+\c@subsection=\count171
+\c@subsubsection=\count172
+\c@paragraph=\count173
+\c@subparagraph=\count174
+\c@thm=\count175
+\c@alg=\count176
+\c@algorithm=\count177
+\c@note=\count178
+\c@summ=\count179
+\c@case=\count180
+\@tempcntc=\count181
+\c@figure=\count182
+\c@table=\count183
+\t@glob@notes=\toks18
+\t@loc@notes=\toks19
+\note@cnt=\count184
+\corauth@text=\toks20
+\email@text=\toks21
+\url@text=\toks22
+\c@corauth=\count185
+\c@author=\count186
+\n@author=\count187
+\c@collab=\count188
+\n@collab=\count189
+\c@address=\count190
+\sv@mathsurround=\dimen145
+\sv@hyphenpenalty=\count191
+\prev@elem=\count192
+\cur@elem=\count193
+\fm@box=\box45
+\fm@size=\dimen146
+\t@abstract=\box46
+\t@keyword=\box47
+\t@xtheight=\dimen147
+\@logoheight=\dimen148
+\@pubyear=\count194
+\c@firstpage=\count195
+\c@lastpage=\count196
+\slashbox=\box48
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 1393.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 1393.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 1393.
+\Slashbox=\box49
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 1394.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1394.
+)
+(./hangul.sty
+! I can't find file `euc-kr.tex'.
+l.45 \input euc-kr.tex
+                      
+(Press Enter to retry, or Control-Z to exit)
+Please type another input file name
+! Emergency stop.
+l.45 \input euc-kr.tex
+                      
+*** (job aborted, file error in nonstop mode)
+
+ 
+Here is how much of TeX's memory you used:
+ 1021 strings out of 480608
+ 12085 string characters out of 5905573
+ 250595 words of memory out of 5000000
+ 16972 multiletter control sequences out of 15000+600000
+ 535987 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,1n,32p,200b,86s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

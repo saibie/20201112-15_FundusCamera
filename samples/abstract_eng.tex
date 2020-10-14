@@ -1,0 +1,222 @@
+\documentclass[12pt]{ksiamproc}
+\usepackage{times}
+\usepackage{float,graphicx}
+\usepackage{amssymb,latexsym,amsmath}
+\renewcommand\baselinestretch{1}
+%%%
+%%% pdf 파일 작성시에는 pdflatex, latex+dvips+ps2pdf, latex+dvipdfm, latex+dvipdfmx
+%%%  중에서 적절한 명령을 사용하시면 됩니다.
+%%%
+%%% You may use one of the following command to generate a pdf-file
+%%% pdflatex, latex+dvips+ps2pdf, latex+dvipdfm, latex+dvipdfmx
+%%%
+%%%%
+%% If you must include aknowledgement for support, insert
+%% the followng section just before the reference section
+%%
+%% \section*{Aknowledgement}\noindent%
+%% This work .....
+%%
+%%
+\begin{document}
+	\pagestyle{empty}
+	\begin{frontmatter}
+		%%
+		%%%  The title should be in 18-point bold face with uppercase
+		%%%%  제목의 모든 문자는 18-pt boldface 대문자를 사용하여야 합니다.
+		%%%%%
+		\title{INSTRUCTIONS TO AUTHORS FOR THE PREPARATION OF PAPERS}
+		%%
+		%%
+		%% 저자를 리스트하는 형식(\author)에서  콤마와(,) and에 주의하시기 바랍니다.
+		%% Be aware of comma(,) and \and in the \author command
+		%%
+		%%
+		\author[hmk]{Hyun-Moo KOH}
+		\author[hmk]{,~ Hae Sung LEE}
+		\author[bds]{\and~ Doo San BAIK}
+		%%
+		%%
+		%아래 \address와 위의 \author 사이에 blank line이 있어야 합니다.
+		%%%% There should be a blank line between \author and \address
+		%%
+		
+		\medskip
+		%%%%
+		\address[hmk]{Department of Civil Engineering, Seoul National University, Seoul 151-742, KOREA}
+		\address[bds]{Department of Civil Engineering, Shilla University, Busan 617-736, KOREA}
+		%
+		% 이 바로 아래는 blank line이 있어야 합니다. there should come a blank line after this line
+		
+		\medskip
+		\centering{Corresponding Author$\;:\;$Hyun-Moo KOH,
+			e-mail@Address.xxx}
+		%
+		\begin{abstract}
+			The following guidelines are to provide general rules for the
+			preparation of the manuscripts to be submitted to KSIAM spring and
+			fall conferences.  This document may be used as the template of your
+			manuscript.  Manuscripts should be submitted in pdf format.
+			Manuscripts other than pdf format are not uploadable.  Manuscripts
+			that do not follow this guideline will be returned to corresponding
+			authors for the correction of format.  Please justify your text and
+			use 12 point times new roman fonts and single space in the entire
+			manuscript.  In this guideline, a blank space denotes a singe spaced
+			blank line for 12 point times new roman font.  For the title of the
+			paper, authors' names and their affiliations, please use 18 point
+			times new roman font in bold face, 12 point times new roman font and
+			12 point times new roman font in italic face, respectively, as shown
+			above. After authors' affiliation list, specify the corresponding
+			author's name and e-mail address. Please leave one blank space
+			between the title, authors' names, affiliations and information on
+			corresponding author.  The lengths of papers for invited papers are
+			6 pages, and those for normal papers are 2 pages minimum, 4 pages
+			maximum.  In case the length of your manuscript is 3 pages, please
+			insert a blank page at the end of your manuscript.
+			
+		\end{abstract}
+	\end{frontmatter}
+	%%
+	%%
+	%% \section과 \subsubsection에 *가 있어야 합니다.
+	%% section과 subsubsection에 numbering을 하지 않습니다.
+	%% \section 다음에 \subsection이 아니라 \subsubsection임에 주의 하시기 바랍니다.
+	%% 반드시 section 다음에 \noindent를 명령해야 합니다.
+	%% \subsubsection에서 각 단어의 첫 글자는 대문자이어야 합니다.
+	%%
+	%% \section and \subsubsection must have the asterisk(*) symbol as shown below.
+	%%  \section must have \noindent command at the end of the command
+	%%   as shown below
+	%%
+	
+	\section*{Primary heading}\noindent%
+	Primary headings are in 12-point bold face with upper cases, and
+	center-aligned.  A main heading should have one line space above
+	and below it.
+	%
+	%%
+	%% Each word in \subsubsection must start with the capital letter
+	%%
+	%
+	\subsubsection*{Secondary Heading} The first characters of all
+	words in a secondary heading are written in upper cases, and left
+	adjusted. A secondary heading should have one line of space above
+	it but no space below it.
+	
+	Paragraphs should be indented 0.7 cm or 5 character spaces,
+	without any extra space above.  Do not indent headings and the
+	first line after blank space.
+	%
+	%
+	\section*{EQUATIONS, TABLES AND FIGURES}\noindent%
+	All forms of equations have to be centered and numbered
+	consecutively with Arabic numerals as they appear in the text of
+	the paper. The equation would be presented as follows:
+	\begin{equation}\label{eq:1}
+		\mathbf{Ma}+\mathbf{C(x)v}+\mathbf{K(x)u}=\mathbf{P}(t)
+	\end{equation}
+	Tables and figures must be integrated with the text and numbered
+	consecutively with Arabic numerals in the order in which reference
+	is made to them in the text of the paper.  The table or figure
+	caption would be referred to in the text as Table 1 or~ Fig. 1,
+	respectively, and be presented as follows.
+	
+	\begin{table}[ht]
+		\caption{The first table in the paper}
+		\begin{tabular}{|ccc|}\hline
+			%A&B&C\\ \hline
+			%0.1&0.2&1\\ \hline
+			&&\\
+			\phantom{MMMMMMMMMMMMMMMM}& Table or~ Figure&\phantom{MMMMMMMMMMMMMMMM}\\
+			&&\\ \hline
+		\end{tabular}
+	\end{table}
+	
+	\begin{figure}[ht]
+		%\centerline{\psfig{file=fig1.eps,width=6.5cm}}
+		%\includegraphics[width=4.7cm,angle=270]{ellipsoid.ps}
+		\caption{\label{fig:fig1} The first figure in the paper}
+	\end{figure}
+	%%
+	%% If you want to include acknowledgement uncomment the following
+	%% and supply appropriate paragraph
+	%%\section*{Acknowledgement}\noindent%
+	%% This work .....
+	%%%
+	\section*{References}\noindent%
+	%%
+	%% 참고문헌은 아래 마지막 부분의 \thebibliography environment를 이용합니다.
+	%% 이 섹션은 단지 설명을 위한 것 입니다.
+	%%
+	%% This section is just for instruction how to prepare reference setion.
+	%% Use \thebibliography environment for reference as shown below after this section
+	%%
+	%%
+	References are to be listed at the end of the paper in the order
+	of the reference, and are referred to in the paper by the numbers
+	in brackets such as \cite{hugh,KLH}.  Style the reference list
+	according to the following examples.
+	\\
+	
+	\noindent (1) Book
+	
+	\noindent1.  Hughes, T. J. R., {\it The Finite Element Method,
+		Linear Static and Dynamic Finite Element  Analysis},
+	Prentice-Hall, Engelwood Cliffs, NJ, 1987.
+	
+	\bigskip
+	
+	\noindent (2) Paper in a journal
+	
+	\noindent2.  Koh, H. M., Lee, H. S. and Haber, R. B., ``Dynamic
+	crack propagation analysis using Eulerian-Lagrangian kinematic
+	descriptions'', {\it Computational Mechanics}, Vol. 3, 1988, pp.
+	141-155.
+	
+	\bigskip
+	\noindent (3) Chapter in a book
+	
+	\noindent3.  Riedel, H., ``Nucleation of Creep Cavities/Basic
+	Theories", Chapter 7, {\it Fracture at High Temperatures},
+	Springer-Verlag, Berlin, 1987.
+	
+	\bigskip
+	\noindent (4) Paper in Conference Proceedings
+	
+	\noindent4.  Lee, H.S. and Koh, H.M., ``A Moving-Grid Finite
+	Element Method for the Prediction of Dynamic Crack Propagation in
+	Brittle Materials", {\it Proc. of the Second International
+		Conference on Computer Aided Assessment and Control of Localized
+		Damage}, Vol. 2, pp 463-480, Southampton U.K., July 1992.
+	
+	%%
+	%%
+	%% 참고 문헌  문헌의 형식에 주의하시어 작성시 아래를 이용하시기 바랍니다.
+	%% Use the follwoing format for Reference section
+	%%
+	\begin{thebibliography}{11}
+		%Book
+		\bibitem {hugh}{Hughes, T. J. R.},
+		\newblock{\em The Finite Element Method, Linear Static and Dynamic Finite
+			Element  Analysis}, Prentice-Hall, Engelwood Cliffs, NJ, 1987.
+		%
+		%Paper in a journal
+		\bibitem {KLH}{ Koh, H. M., Lee, H. S. and Haber, R. B.},
+		{``Dynamic crack propagation analysis using Eulerian-Lagrangian
+			kinematic descriptions''}, {\em Computational Mechanics}, Vol. 3,
+		1988, pp. 141-155.
+		%
+		%Chapter in a book
+		\bibitem {riedel}{Riedel, H.},
+		{``Nucleation of Creep Cavities/Basic Theories"},  Chapter 7, {\it
+			Fracture at High Temperatures}, Springer-Verlag, Berlin, 1987.
+		%
+		%Paper in Conference Proceedings
+		\bibitem {LK}{Lee, H.S. and Koh, H.M.},
+		{``A Moving-Grid Finite Element Method for the Prediction of
+			Dynamic Crack Propagation in Brittle Materials"}, {\it Proc. of
+			the Second International Conference on Computer Aided Assessment
+			and Control of Localized Damage}, Vol. 2, pp 463-480, Southampton
+		U.K., July 1992.
+	\end{thebibliography}
+\end{document}
