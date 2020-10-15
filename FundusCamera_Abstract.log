@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.9)  14 OCT 2020 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.9)  15 OCT 2020 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -287,42 +287,30 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 \c@sv@footnote=\count281
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--131
-
- []
-
-
 Underfull \hbox (badness 10000) has occurred while \output is active
  
  []
 
 [1{c:/usr/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (0.18901pt too wide) in paragraph at lines 142--146
-\OT1/ptm/m/n/12 2. Koh, H. M., Lee, H. S. and Haber, R. B., ``Dy-namic crack pr
-op-a-ga-tion anal-y-sis us-ing Eulerian-
- []
-
-[2] (./FundusCamera_Abstract.aux) ) 
+(./FundusCamera_Abstract.aux) ) 
 Here is how much of TeX's memory you used:
- 3350 strings out of 480608
- 44088 string characters out of 5905573
- 281489 words of memory out of 5000000
- 19191 multiletter control sequences out of 15000+600000
- 548698 words of font info for 69 fonts, out of 8000000 for 9000
+ 3337 strings out of 480608
+ 43969 string characters out of 5905573
+ 280464 words of memory out of 5000000
+ 19181 multiletter control sequences out of 15000+600000
+ 547770 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,8n,31p,259b,213s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/usr/texlive/2020/texmf-dist/fonts/enc/dv
-ips/base/8r.enc}<c:/usr/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><c:/usr/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-2.pfb><c:/usr/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-<c:/usr/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/usr
-/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/usr/texlive/2020/
-texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/usr/texlive/2020/texmf-dist/fon
-ts/type1/urw/times/utmri8a.pfb>
-Output written on FundusCamera_Abstract.pdf (2 pages, 78090 bytes).
+ 34i,6n,31p,249b,213s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/usr/texlive/2020/texmf-dist/fonts/enc/dvips/
+base/8r.enc}<c:/usr/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb><c:/usr/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+c:/usr/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/usr/texlive
+/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/usr/texlive/2020/texmf-di
+st/fonts/type1/urw/times/utmri8a.pfb>
+Output written on FundusCamera_Abstract.pdf (1 page, 54809 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 29 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

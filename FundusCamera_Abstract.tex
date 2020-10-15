@@ -25,7 +25,7 @@
 		%%%  The title should be in 18-point bold face with uppercase
 		%%%%  제목의 모든 문자는 18-pt boldface 대문자를 사용하여야 합니다.
 		%%%%%
-		\title{AN ALGORITHM FOR OPHTHALMIC DISEASE DIAGNOSIS BASED ON CONVOLUTIONAL NEURAL NETWORK}
+		\title{OPHTHALMIC DISEASE DIAGNOSIS BASED ON CONVOLUTIONAL NEURAL NETWORK}
 		%%
 		%%
 		%% 저자를 리스트하는 형식(\author)에서  콤마와(,) and에 주의하시기 바랍니다.
@@ -53,24 +53,24 @@
 			saibie1677@nims.re.kr}
 		%
 		\begin{abstract}
-			
+			Recently, for aged people, diabetic retinopathy(DR), aged macular degeneration(AMD), and glaucoma are increased in Korea.
+			They are major ophthalmic diseases which occur vision damage.
+			The aged people need periodic diagnosis with a fundus camera for eyes.
+			But, in these days, periodic diagnosis are hard to be done 
+			because there are not sufficient ophthalmic doctors and the ophthalmic inspections are dependent on tertiary-care hospitals.
+			Therefore, an A.I. which does diagnosis for ophthalmic diseases is being developed through a research project.
+			The A.I. will help non-ophthalmic doctors with their ophthalmic diagnosis and make periodic diagnosis easier.
+			In this presentation, we give you introductions for the A.I. model, and the image data which are contained in the training process.
 		\end{abstract}
 	\end{frontmatter}
-	%%
-	%%
 	%% \section과 \subsubsection에 *가 있어야 합니다.
 	%% section과 subsubsection에 numbering을 하지 않습니다.
 	%% \section 다음에 \subsection이 아니라 \subsubsection임에 주의 하시기 바랍니다.
 	%% 반드시 section 다음에 \noindent를 명령해야 합니다.
 	%% \subsubsection에서 각 단어의 첫 글자는 대문자이어야 합니다.
-	%%
-	%% \section and \subsubsection must have the asterisk(*) symbol as shown below.
-	%%  \section must have \noindent command at the end of the command
-	%%   as shown below
-	%%
 	
-	\section*{Primary heading}\noindent%
-	
+%	\section*{Model}\noindent%
+		
 	%
 	%%
 	%% Each word in \subsubsection must start with the capital letter
@@ -79,87 +79,87 @@
 	
 	%
 	%
-	\section*{EQUATIONS, TABLES AND FIGURES}\noindent%
-	All forms of equations have to be centered and numbered
-	consecutively with Arabic numerals as they appear in the text of
-	the paper. The equation would be presented as follows:
-	\begin{equation}\label{eq:1}
-		\mathbf{Ma}+\mathbf{C(x)v}+\mathbf{K(x)u}=\mathbf{P}(t)
-	\end{equation}
-	Tables and figures must be integrated with the text and numbered
-	consecutively with Arabic numerals in the order in which reference
-	is made to them in the text of the paper.  The table or figure
-	caption would be referred to in the text as Table 1 or~ Fig. 1,
-	respectively, and be presented as follows.
-	
-	\begin{table}[ht]
-		\caption{The first table in the paper}
-		\begin{tabular}{|ccc|}\hline
-			%A&B&C\\ \hline
-			%0.1&0.2&1\\ \hline
-			&&\\
-			\phantom{MMMMMMMMMMMMMMMM}& Table or~ Figure&\phantom{MMMMMMMMMMMMMMMM}\\
-			&&\\ \hline
-		\end{tabular}
-	\end{table}
-	
-	\begin{figure}[ht]
-		%\centerline{\psfig{file=fig1.eps,width=6.5cm}}
-		%\includegraphics[width=4.7cm,angle=270]{ellipsoid.ps}
-		\caption{\label{fig:fig1} The first figure in the paper}
-	\end{figure}
+%	\section*{EQUATIONS, TABLES AND FIGURES}\noindent%
+%	All forms of equations have to be centered and numbered
+%	consecutively with Arabic numerals as they appear in the text of
+%	the paper. The equation would be presented as follows:
+%	\begin{equation}\label{eq:1}
+%		\mathbf{Ma}+\mathbf{C(x)v}+\mathbf{K(x)u}=\mathbf{P}(t)
+%	\end{equation}
+%	Tables and figures must be integrated with the text and numbered
+%	consecutively with Arabic numerals in the order in which reference
+%	is made to them in the text of the paper.  The table or figure
+%	caption would be referred to in the text as Table 1 or~ Fig. 1,
+%	respectively, and be presented as follows.
+%	
+%	\begin{table}[ht]
+%		\caption{The first table in the paper}
+%		\begin{tabular}{|ccc|}\hline
+%			%A&B&C\\ \hline
+%			%0.1&0.2&1\\ \hline
+%			&&\\
+%			\phantom{MMMMMMMMMMMMMMMM}& Table or~ Figure&\phantom{MMMMMMMMMMMMMMMM}\\
+%			&&\\ \hline
+%		\end{tabular}
+%	\end{table}
+%	
+%	\begin{figure}[ht]
+%		%\centerline{\psfig{file=fig1.eps,width=6.5cm}}
+%		%\includegraphics[width=4.7cm,angle=270]{ellipsoid.ps}
+%		\caption{\label{fig:fig1} The first figure in the paper}
+%	\end{figure}
 	%%
 	%% If you want to include acknowledgement uncomment the following
 	%% and supply appropriate paragraph
 	%%\section*{Acknowledgement}\noindent%
 	%% This work .....
 	%%%
-	\section*{References}\noindent%
-	%%
-	%% 참고문헌은 아래 마지막 부분의 \thebibliography environment를 이용합니다.
-	%% 이 섹션은 단지 설명을 위한 것 입니다.
-	%%
-	%% This section is just for instruction how to prepare reference setion.
-	%% Use \thebibliography environment for reference as shown below after this section
-	%%
-	%%
-	References are to be listed at the end of the paper in the order
-	of the reference, and are referred to in the paper by the numbers
-	in brackets such as \cite{hugh,KLH}.  Style the reference list
-	according to the following examples.
-	\\
-	
-	\noindent (1) Book
-	
-	\noindent1.  Hughes, T. J. R., {\it The Finite Element Method,
-		Linear Static and Dynamic Finite Element  Analysis},
-	Prentice-Hall, Engelwood Cliffs, NJ, 1987.
-	
-	\bigskip
-	
-	\noindent (2) Paper in a journal
-	
-	\noindent2.  Koh, H. M., Lee, H. S. and Haber, R. B., ``Dynamic
-	crack propagation analysis using Eulerian-Lagrangian kinematic
-	descriptions'', {\it Computational Mechanics}, Vol. 3, 1988, pp.
-	141-155.
-	
-	\bigskip
-	\noindent (3) Chapter in a book
-	
-	\noindent3.  Riedel, H., ``Nucleation of Creep Cavities/Basic
-	Theories", Chapter 7, {\it Fracture at High Temperatures},
-	Springer-Verlag, Berlin, 1987.
-	
-	\bigskip
-	\noindent (4) Paper in Conference Proceedings
-	
-	\noindent4.  Lee, H.S. and Koh, H.M., ``A Moving-Grid Finite
-	Element Method for the Prediction of Dynamic Crack Propagation in
-	Brittle Materials", {\it Proc. of the Second International
-		Conference on Computer Aided Assessment and Control of Localized
-		Damage}, Vol. 2, pp 463-480, Southampton U.K., July 1992.
-	
+%	\section*{References}\noindent%
+%	%%
+%	%% 참고문헌은 아래 마지막 부분의 \thebibliography environment를 이용합니다.
+%	%% 이 섹션은 단지 설명을 위한 것 입니다.
+%	%%
+%	%% This section is just for instruction how to prepare reference setion.
+%	%% Use \thebibliography environment for reference as shown below after this section
+%	%%
+%	%%
+%	References are to be listed at the end of the paper in the order
+%	of the reference, and are referred to in the paper by the numbers
+%	in brackets such as \cite{hugh,KLH}.  Style the reference list
+%	according to the following examples.
+%	\\
+%	
+%	\noindent (1) Book
+%	
+%	\noindent1.  Hughes, T. J. R., {\it The Finite Element Method,
+%		Linear Static and Dynamic Finite Element  Analysis},
+%	Prentice-Hall, Engelwood Cliffs, NJ, 1987.
+%	
+%	\bigskip
+%	
+%	\noindent (2) Paper in a journal
+%	
+%	\noindent2.  Koh, H. M., Lee, H. S. and Haber, R. B., ``Dynamic
+%	crack propagation analysis using Eulerian-Lagrangian kinematic
+%	descriptions'', {\it Computational Mechanics}, Vol. 3, 1988, pp.
+%	141-155.
+%	
+%	\bigskip
+%	\noindent (3) Chapter in a book
+%	
+%	\noindent3.  Riedel, H., ``Nucleation of Creep Cavities/Basic
+%	Theories", Chapter 7, {\it Fracture at High Temperatures},
+%	Springer-Verlag, Berlin, 1987.
+%	
+%	\bigskip
+%	\noindent (4) Paper in Conference Proceedings
+%	
+%	\noindent4.  Lee, H.S. and Koh, H.M., ``A Moving-Grid Finite
+%	Element Method for the Prediction of Dynamic Crack Propagation in
+%	Brittle Materials", {\it Proc. of the Second International
+%		Conference on Computer Aided Assessment and Control of Localized
+%		Damage}, Vol. 2, pp 463-480, Southampton U.K., July 1992.
+%	
 	%%
 	%%
 	%% 참고 문헌  문헌의 형식에 주의하시어 작성시 아래를 이용하시기 바랍니다.
@@ -167,28 +167,27 @@
 	%%
 	\begin{thebibliography}{11}
 		%Book
-		\bibitem {hugh}{Hughes, T. J. R.},
-		\newblock{\em The Finite Element Method, Linear Static and Dynamic Finite
-			Element  Analysis}, Prentice-Hall, Engelwood Cliffs, NJ, 1987.
-		%
-		%Paper in a journal
-		\bibitem {KLH}{ Koh, H. M., Lee, H. S. and Haber, R. B.},
-		{``Dynamic crack propagation analysis using Eulerian-Lagrangian
-			kinematic descriptions''}, {\em Computational Mechanics}, Vol. 3,
-		1988, pp. 141-155.
-		%
-		%Chapter in a book
-		\bibitem {riedel}{Riedel, H.},
-		{``Nucleation of Creep Cavities/Basic Theories"},  Chapter 7, {\it
-			Fracture at High Temperatures}, Springer-Verlag, Berlin, 1987.
-		%
-		%Paper in Conference Proceedings
-		\bibitem {LK}{Lee, H.S. and Koh, H.M.},
-		{``A Moving-Grid Finite Element Method for the Prediction of
-			Dynamic Crack Propagation in Brittle Materials"}, {\it Proc. of
-			the Second International Conference on Computer Aided Assessment
-			and Control of Localized Damage}, Vol. 2, pp 463-480, Southampton
-		U.K., July 1992.
+		\bibitem {YooLee}{Yoo, Hyeong-gon and Lee, Jae-hong},
+		\newblock{\em Funduscopic Examination}, Naewae-haksool, 2013.
+%		%
+%		%Paper in a journal
+%		\bibitem {KLH}{ Koh, H. M., Lee, H. S. and Haber, R. B.},
+%		{``Dynamic crack propagation analysis using Eulerian-Lagrangian
+%			kinematic descriptions''}, {\em Computational Mechanics}, Vol. 3,
+%		1988, pp. 141-155.
+%		%
+%		%Chapter in a book
+%		\bibitem {riedel}{Riedel, H.},
+%		{``Nucleation of Creep Cavities/Basic Theories"},  Chapter 7, {\it
+%			Fracture at High Temperatures}, Springer-Verlag, Berlin, 1987.
+%		%
+%		%Paper in Conference Proceedings
+%		\bibitem {LK}{Lee, H.S. and Koh, H.M.},
+%		{``A Moving-Grid Finite Element Method for the Prediction of
+%			Dynamic Crack Propagation in Brittle Materials"}, {\it Proc. of
+%			the Second International Conference on Computer Aided Assessment
+%			and Control of Localized Damage}, Vol. 2, pp 463-480, Southampton
+%		U.K., July 1992.
 	\end{thebibliography}
 \end{document}
 
